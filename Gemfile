@@ -53,6 +53,7 @@ gem "bootsnap", require: false
 
 #My additional stuffs
 gem 'foreman', '~> 0.87.2'
+gem 'algolia', '~> 2.3', '>= 2.3.1'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

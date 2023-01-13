@@ -21,11 +21,7 @@ const Movies = () => {
   const allMovies = movies.map((movie, index) => (
     <div key={index} className="col-md-6 col-lg-4">
       <div className="card mb-4">
-        <img
-          src={movie.image}
-          className="card-img-top"
-          alt={`${movie.name} image`}
-        />
+        <h1>🎞️🎞️🎞️🎞️🎞️🎞️🎞️</h1>
         <div className="card-body">
           <h5 className="card-title">{movie.title}</h5>
           <Link to={`/movie/${movie.id}`} className="btn custom-button">

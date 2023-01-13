@@ -12,6 +12,7 @@ class Api::V1::MoviesController < ApplicationController
       render json: movie
     else
       render json: movie.errors
+    end
   end
 
   def show
@@ -23,8 +24,10 @@ class Api::V1::MoviesController < ApplicationController
     render json: { message: 'Movie deleted'}
   end
 
-  private movie_params
-    params.permit(:title, :alternative_titles, :year, :image, :color, :score, :rating, :actors, :actor_facets, :genre, :objectID)
+  private
+
+  def movie_params
+    params.permit(:title)
   end
 
   def set_movie

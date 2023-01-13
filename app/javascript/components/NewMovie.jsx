@@ -18,7 +18,7 @@ const NewMovie = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const url = "/api/v1/recipes/create";
+    const url = "/api/v1/movies/create";
 
     if (title.length == 0) return;
 
@@ -61,7 +61,7 @@ const NewMovie = () => {
                 id="movieName"
                 className="form-control"
                 required
-                onChange={(event) => onChange(event, setName)}
+                onChange={(event) => onChange(event, setTitle)}
               />
             </div>
             <button type="submit" className="btn custom-button mt-3">

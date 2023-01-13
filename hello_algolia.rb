@@ -2,7 +2,7 @@
 require 'algolia'
 
 # Connect and authenticate with your Algolia app
-client = Algolia::Search::Client.create('CDV7I5964Z', 'bcdf3d2c1dd43b85b34d0bc51866cfa9')
+client = Algolia::Search::Client.create('CDV7I5964Z', 'YourWriteAPIKey')
 
 # Create a new index and add a record
 index = client.init_index('test_index')

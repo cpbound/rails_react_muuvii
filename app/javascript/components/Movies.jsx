@@ -27,7 +27,7 @@ const Movies = () => {
           alt={`${movie.name} image`}
         />
         <div className="card-body">
-          <h5 className="card-title">{movie.name}</h5>
+          <h5 className="card-title">{movie.title}</h5>
           <Link to={`/movie/${movie.id}`} className="btn custom-button">
             View Movie
           </Link>
@@ -48,7 +48,7 @@ const Movies = () => {
     <>
       <section className="jumbotron jumbotron-fluid text-center">
         <div className="container py-5">
-          <h1 className="display-4">ALl dem movies</h1>
+          <h1 className="display-4">All dem movies</h1>
           <p className="lead text-muted">
             Here's some stuff to watch
           </p>

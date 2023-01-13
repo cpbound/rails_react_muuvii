@@ -12,7 +12,7 @@ json_data = JSON.parse file
 
 p "I've got an idea for a movie and it goes like this..."
 
-json_data[0] do |data|
+json_data.each do |data|
   Movie.create!(title: data['title'],
   alternative_titles: data['alternative_title'],
   year: data['year'],

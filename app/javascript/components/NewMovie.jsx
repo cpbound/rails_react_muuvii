@@ -41,7 +41,7 @@ const NewMovie = () => {
         }
         throw new Error("Network response was not ok.");
       })
-      .then((response) => navigate(`/movie/${response.id}`))
+      .then((response) => navigate(`/movies`))
       .catch((error) => console.log(error.message));
   };
 

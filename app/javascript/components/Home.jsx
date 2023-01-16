@@ -8,15 +8,15 @@ export default () => (
         <h1 className="display-4">🎞️M🎞️O🎞️V🎞️I🎞️E🎞️S🎞️</h1>
         <p className="lead">It's a load of movies to watch and stuff!</p>
         <hr className="my-4" />
-        <div class="input-group">
+        <div className="input-group">
           <input
             type="search"
-            class="form-control rounded"
+            className="form-control rounded"
             placeholder="Search"
             aria-label="Search"
             aria-describedby="search-addon"
           />
-          <button type="button" class="btn btn-outline-primary">
+          <button type="button" className="btn btn-outline-primary">
             search
           </button>
         </div>

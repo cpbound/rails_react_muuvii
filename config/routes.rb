@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       get 'movies/index'
       post 'movies/create'
       get '/show/:id', to: 'movies#show'
-      delete 'movies/destroy'
+      delete '/destroy/:id', to: 'movies#destroy'
     end
   end
   root 'homepage#index'

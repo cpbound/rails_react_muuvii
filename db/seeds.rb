@@ -21,7 +21,7 @@ paxton_json_data.each do |data|
   poster_path: data['poster_path'],
   overview: data['overview'],
   character: data['character'],
-  media_type: data['media_type']
+  media_type: data['media_type'],
   backdrop_path: data["backdrop_path"]
   )
 end
@@ -33,10 +33,11 @@ paxton_json_data.each do |data|
   poster_path: data['poster_path'],
   overview: data['overview'],
   character: data['character'],
-  media_type: data['media_type']
+  media_type: data['media_type'],
   backdrop_path: data["backdrop_path"]
   )
 end
 
 p "Game over man! Game over!"
 p "Made #{Movie.count} movies"
+p Movie[0]

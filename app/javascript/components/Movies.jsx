@@ -26,6 +26,10 @@ const Movies = () => {
         <h1>🎞️🎞️🎞️🎞️</h1>
         <div className="card-body">
           <h5 className="card-title">{movie.title}</h5>
+          <p>{movie.release_date}</p>
+          <p>{movie.overview}</p>
+          <p>{movie.character}</p>
+          <p>{movie.media_type}</p>
           <Link to={`/movie/${movie.id}`} className="btn custom-button">
             View Movie
           </Link>

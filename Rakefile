@@ -5,4 +5,4 @@ require_relative "config/application"
 
 Rails.application.load_tasks
 
-p Movie.all
+# p Movie.all
